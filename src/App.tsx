@@ -9,8 +9,8 @@ function App() {
             <PageTitle title={'This is App'}/>
             <PageTitle title={'My friends'}/>
             <Rating value={3}/>
-            <Accordion title={'меню'}/>
-            <Accordion title={'список'}/>
+            <Accordion titleValue={'Menu'}/>
+            <Accordion titleValue={'Users'}/>
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
@@ -21,13 +21,15 @@ function App() {
     );
 }
 
-const PageTitle = (props: any) => {
+type PageTitlePropsType = {
+    title: string
+}
+
+const PageTitle = (props: PageTitlePropsType) => {
     return (
         <h1>{props.title}</h1>
     )
 }
-
-
 
 
 export default App;

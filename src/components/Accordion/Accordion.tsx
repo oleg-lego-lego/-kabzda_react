@@ -1,15 +1,23 @@
 import React from "react";
 
-export const Accordion = (props: any) => {
+type AccordionPropsType = {
+    titleValue: string
+}
+
+export const Accordion = (props: AccordionPropsType) => {
     return (
         <div>
-            <AccordionTitle title={props.title}/>
+            <AccordionTitle title={props.titleValue}/>
             <AccordionBody/>
         </div>
     )
 }
 
-const AccordionTitle = (props: any) => {
+type AccordionTitlePropsType = {
+    title: string
+}
+
+const AccordionTitle = (props: AccordionTitlePropsType) => {
     return (
         <>
             <h3>{props.title}</h3>
