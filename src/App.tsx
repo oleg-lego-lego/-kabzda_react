@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {OnOff} from "./components/OnOff/OnOff";
 
 function App() {
     return (
-        <div>
+        <div className={"App"}>
             <OnOff/>
-            <OnOff/>
+            <UncontrolledAccordion titleValue={"Menu"}/>
+            <UncontrolledAccordion titleValue={"Users"}/>
+            <UncontrolledRating/>
         </div>
     );
 }
