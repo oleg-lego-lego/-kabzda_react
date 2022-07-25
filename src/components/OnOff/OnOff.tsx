@@ -1,7 +1,7 @@
 import React from 'react';
 
 type OnOffPropsType = {
-    on: boolean
+    on?: boolean
     onChange: (on: boolean) => void
 }
 
