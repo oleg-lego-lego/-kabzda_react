@@ -6,6 +6,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {Rating} from "./components/Rating/Rating";
 import {Accordion} from "./components/Accordion/Accordion";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {Select} from "./components/Select/Select";
 
 export type RatingValuePropsType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -13,6 +14,12 @@ function App() {
     let [ratingValue, setRatingValue] = useState<RatingValuePropsType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState(false)
     let [switchOn, setSwitchOn] = useState(false)
+
+    let items = [
+        {value: '1', title: 'Minsk'},
+        {value: '2', title: 'Moscow'},
+        {value: '3', title: 'Kiev'},
+    ]
 
     return (
         <div className={"App"}>
@@ -25,9 +32,11 @@ function App() {
                        items={[{title: 'oleg', value: 1},
                            {title: 'dima', value: 2},
                            {title: 'kris', value: 3}]}
-                       onClick={() => {}}/>
+                       onClick={() => {
+                       }}/>
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
             <OnOff on={switchOn} onChange={setSwitchOn}/>
+            <Select items={items} onChange={() => {}} value={'1'}/>
         </div>
     );
 }
