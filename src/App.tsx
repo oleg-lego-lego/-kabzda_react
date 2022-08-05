@@ -7,7 +7,7 @@ import {Rating} from "./components/Rating/Rating";
 import {Accordion} from "./components/Accordion/Accordion";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {Select} from "./components/Select/Select";
-import {DifficultUseMemo} from "./components/UseMemo/UseMemo";
+import {DifficultUseMemo, HelpUseMemo} from "./components/UseMemo/UseMemo";
 
 export type RatingValuePropsType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -40,6 +40,7 @@ function App() {
             <OnOff on={switchOn} onChange={setSwitchOn}/>
             <Select items={items} onChange={() => {}} value={'1'}/>
             <DifficultUseMemo/>
+            <HelpUseMemo/>
         </div>
     );
 }

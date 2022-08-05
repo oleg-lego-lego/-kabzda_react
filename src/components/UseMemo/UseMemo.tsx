@@ -38,3 +38,21 @@ export const DifficultUseMemo = () => {
         </div>
     );
 }
+
+export const HelpUseMemo = () => {
+    const [counter, setCounter] = useState(0)
+    const [users, setUser] = useState(['oleg', 'valera', 'artem'])
+
+    const newArray = useMemo(() => {
+        const newArray = users.filter(u => u.toLowerCase().indexOf('a') > -1)
+        return newArray
+    }, [])
+
+    return (
+        <>
+            <button onClick={() => setCounter(counter + 1)}>+</button>
+            {counter}
+            {newArray}
+        </>
+    )
+}
