@@ -53,6 +53,7 @@ export const HelpUseMemo = () => {
             <button onClick={() => setCounter(counter + 1)}>+</button>
             {counter}
             {newArray}
+            {users}
         </>
     )
 }
