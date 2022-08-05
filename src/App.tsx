@@ -24,6 +24,7 @@ function App() {
 
     return (
         <div className={"App"}>
+            <PageTitle title={'oleg'}/>
             <UncontrolledAccordion titleValue={"Menu"}/>
             <UncontrolledAccordion titleValue={"Users"}/>
             <UncontrolledRating/>
@@ -31,7 +32,7 @@ function App() {
             <Accordion titleValue={"Menu"} collapsed={accordionCollapsed}
                        onChange={() => setAccordionCollapsed(!accordionCollapsed)}
                        items={[{title: 'oleg', value: 1},
-                           {title: 'dima', value: 2},
+                           {title: 'dmitri', value: 2},
                            {title: 'kris', value: 3}]}
                        onClick={() => {
                        }}/>

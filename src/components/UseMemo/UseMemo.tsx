@@ -4,7 +4,7 @@ export const DifficultUseMemo = () => {
     const [a, setA] = useState<number>(3)
     const [b, setB] = useState<number>(3)
 
-    let resultA = 1;
+    let resultA;
     let resultB = 1;
 
     resultA = useMemo(() => {
