@@ -7,7 +7,7 @@ import {Rating} from "./components/Rating/Rating";
 import {Accordion} from "./components/Accordion/Accordion";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {Select} from "./components/Select/Select";
-import {DifficultUseMemo, HelpUseMemo} from "./components/UseMemo/UseMemo";
+import {DifficultUseMemo, HelpUseMemo} from "./components/UseMemo/UseMemoUseCallback";
 
 export type RatingValuePropsType = 0 | 1 | 2 | 3 | 4 | 5
 
