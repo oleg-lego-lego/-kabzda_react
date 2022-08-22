@@ -9,6 +9,7 @@ import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOf
 import {Select} from "./components/Select/Select";
 import {DifficultUseMemo, HelpUseMemo} from "./components/UseMemo/UseMemoUseCallback";
 import {UseState} from "./components/UseState/UseState";
+import {UseEffect} from "./components/useEffect/useEffect";
 
 export type RatingValuePropsType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -43,6 +44,7 @@ function App() {
             <DifficultUseMemo/>
             <HelpUseMemo/>
             <UseState/>
+            <UseEffect/>
         </div>
     );
 }
