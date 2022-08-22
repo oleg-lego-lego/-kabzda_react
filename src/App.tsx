@@ -8,6 +8,7 @@ import {Accordion} from "./components/Accordion/Accordion";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {Select} from "./components/Select/Select";
 import {DifficultUseMemo, HelpUseMemo} from "./components/UseMemo/UseMemoUseCallback";
+import {UseState} from "./components/UseState/UseState";
 
 export type RatingValuePropsType = 0 | 1 | 2 | 3 | 4 | 5
 
@@ -41,6 +42,7 @@ function App() {
             <Select items={items} onChange={() => {}} value={'1'}/>
             <DifficultUseMemo/>
             <HelpUseMemo/>
+            <UseState/>
         </div>
     );
 }
