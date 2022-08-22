@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 
 const generateData = () => {
     return 124235345;
 }
 
 export const UseState = () => {
-    const initValue = generateData()
+    const initValue = useMemo(generateData, [])
     const[counter, setCounter] = useState(initValue)
 
     return (
